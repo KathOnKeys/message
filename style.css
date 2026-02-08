@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 50px;
+    background-color: #ffe6f2;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hidden {
+    display: none;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.show {
+    display: block;
+    opacity: 1;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+
+@keyframes floatingHearts {
+    0% {transform: translateY(0) scale(1); opacity: 1;}
+    100% {transform: translateY(-100vh) scale(1.5); opacity: 0;}
+}
+
+.heart {
+    position: fixed;
+    bottom: -10px;
+    color: pink;
+    font-size: 20px;
+    animation: floatingHearts 5s linear infinite;
+}
+
